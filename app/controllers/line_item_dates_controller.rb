@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class LineItemDatesController < ApplicationController
   before_action :set_quote
   before_action :set_line_item_date, only: %i[edit update destroy]
@@ -19,8 +21,7 @@ class LineItemDatesController < ApplicationController
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @line_item_date.update(line_item_date_params)

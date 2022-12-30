@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 #
 # Uncomment this and change the path if necessary to include your own
 # components.
@@ -13,7 +14,7 @@ SimpleForm.setup do |config|
   # wrapper, change the order or even add your own to the
   # stack. The options given below are used to wrap the
   # whole input.
-  config.wrappers :default, class: "form__group" do |b|
+  config.wrappers :default, class: 'form__group' do |b|
     ## Extensions enabled by default
     # Any of these extensions can be disabled for a
     # given input by passing: `f.input EXTENSION_NAME => false`.
@@ -55,9 +56,8 @@ SimpleForm.setup do |config|
   # CSS class to add for error notification helper.
   config.error_notification_class = 'error_notification'
 
-
   # How the label text should be generated altogether with the required text.
-  config.label_text = lambda { |label, required, explicit_label| "#{required} #{label}" }
+  config.label_text = ->(label, required, _explicit_label) { "#{required} #{label}" }
 
   # You can define the class to use on all labels. Default is nil.
   # config.label_class = nil

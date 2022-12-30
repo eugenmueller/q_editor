@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateLineItemDates < ActiveRecord::Migration[7.0]
   def change
     create_table :line_item_dates do |t|
@@ -7,7 +9,7 @@ class CreateLineItemDates < ActiveRecord::Migration[7.0]
       t.timestamps
     end
 
-    add_index :line_item_dates, [:quote_id, :date], unique: true
+    add_index :line_item_dates, %i[quote_id date], unique: true
 
     add_index :line_item_dates, :date
   end

@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-class LineItemDatesControllerTest < ActionDispatch::IntegrationTest
+class LineItemTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
