@@ -2,6 +2,6 @@ AllCops:
   NewCops: enable
   Exclude:
     - 'db/schema.rb'
-    - 'bin/bundle'
+    - 'bin/{bundle,rails,rake}'
 Style/Documentation:
   Enabled: false
