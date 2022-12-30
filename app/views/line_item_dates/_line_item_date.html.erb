@@ -7,10 +7,10 @@
 
 			<div class="line-item-date__actions">
 				<%= link_to "Edit",
-							[:edit, quote, line_item_date],
+							[:edit, line_item_date.quote, line_item_date],
 							class: "btn btn--light" %>
 				<%= button_to "Delete",
-							  [quote, line_item_date],
+							  [line_item_date.quote, line_item_date],
 							  method: :delete,
 							  form: { data: { turbo_confirm: "Are you sure?" } },
 							  class: "btn btn--primary" %>
